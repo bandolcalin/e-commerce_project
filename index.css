@@ -1,0 +1,229 @@
+body {
+    background-color: rgb(242, 242, 242);
+    margin: 0 7em 0 7em;
+    height: 100%;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 5.5rem;
+}
+
+#productContainer {
+    display: inline-block;
+    flex-direction: column;
+    flex: 1; 
+    padding: 1em;
+    border: solid;
+    max-width: 22%;
+    height: auto;
+    justify-content: space-around;
+    margin: 5em 1em auto;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    box-shadow: 0.1em 0.1em 0.1em grey;
+    border-radius: 5px;
+    padding-bottom: 2.5rem;
+}
+
+#productContainer:hover {
+    border: 0.1em solid #ccc;
+    box-shadow: 0.5em 0.5em 0.5em grey;
+    border-radius: 5px;
+}
+
+#productContainer > img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+p {
+    margin: 2em auto;
+    height: auto;
+    width: inherit;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p:last-of-type {
+    margin: 1em;
+    height: auto;
+    max-width: 100%;
+    color: red;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+    margin: 0.2em auto;
+    display: inline-block;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+    font-size: 1.2vmax;
+    height: 2em;
+    max-width: 54.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: rgb(213, 30, 30);
+    transition-duration: 0.2s;
+}
+
+button:last-child {
+    background-color: rgb(213, 30, 30);
+    transition-duration: 0.2s;
+}
+
+ul {
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(104, 104, 104);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 3em auto;
+    border-radius: 0.3em;
+}
+
+input {
+    height: 2em auto;
+    width: 20em auto;
+    margin: 0.8em 0.5em auto;
+    border-radius: 4px;
+}
+
+#icon {
+    height: 6em;
+    width: 6em;
+    position: sticky;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+  
+li:last-child {
+    border-right: none;
+    background-color: rgb(213, 30, 30);
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+    background-color: rgb(213, 30, 30);
+    transition-duration: 0.2s;
+}
+
+li > button {
+    font-size: 1em;
+    margin: 0 auto;
+    border-radius: 0;
+}
+  
+.active {
+    background-color: #008CBA;
+    font-family: sans-serif;
+}
+
+.active:hover {
+    background-color: rgb(0, 109, 145);
+    transition-duration: 0.2s;
+}
+
+  
+* {
+    box-sizing: border-box;
+}
+  
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+  
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+  
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#detailsBody {
+    display: none;
+}
+
+#banner {
+    background-color: rgba(30, 228, 0, 0.413);
+    color: white;
+    height: 3em;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    margin:  auto;
+    position: fixed;
+    right: 440px;
+    top: 20px;
+    transition: 0.3s;
+    border-radius: 2em;
+    visibility: hidden;
+}
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height: 2.5rem;
+    background-color: rgb(104, 104, 104);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 169, 225);
+}
+
+#pDiv > p{
+    min-height: 6em;
+    max-height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}

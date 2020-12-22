@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    height: 240px;
+    margin-bottom: 30px;
+    background-color: rgb(238, 238, 238);
+}
+
+.container>p {
+    position: relative;
+    top: 60px;
+    left: 190px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: inline;
+    color: rgb(51, 51, 51);
+    margin: 0 auto;
+    font-weight: lighter;
+}
+
+#p {
+    color: rgb(153, 153, 153);
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.container-contact {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(204, 204, 204);
+    width: 1000px;
+    height: 350px;
+    position: center;
+    margin: auto;
+    background-color: rgba(0, 166, 255, 0.18);
+    border-radius: 3px;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.345);
+}
+
+label {
+    position: relative;
+    padding: 20px;
+}
+
+form {
+    position: relative;
+    margin: 20px 0px;
+    border-radius: 3px;
+}
+
+#name, #email, #subject {
+    position: relative;
+    top: 50px;
+    right: 90px;
+    padding: 6px 100px;
+    border-radius: 3px;
+    border: none;
+}
+
+#name:hover, #email:hover, #subject:hover {
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: ease-in 1s;
+}
+
+#subject {
+    left: -100px;
+}
+
+#email {
+    left: -86px;
+}
+
+.name, .email, .subject {
+    position: relative;
+    top: 20px;
+    padding: 0px 40px;
+}
+
+#message {
+    position: relative;
+    float: right;
+    bottom: 190px;
+    right: 210px;
+    padding: 5px 10px;
+}
+
+textarea {
+    position: relative;
+    float: right;
+    top: -150px;
+    left: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(204, 204, 204)
+}
+
+#send {
+    position: relative;
+    float: right;
+    top: 85px;
+    left: 280px;
+    background-color: rgb(59, 139, 206);
+    border-radius: 3px;
+}
+
+p {
+    margin: 5px;
+    color: white;
+}
+
